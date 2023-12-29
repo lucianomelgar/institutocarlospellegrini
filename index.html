@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!--Titulo Pestaña-->
+	<title>Instituto Carlos Pellegrini</title>
+
+	<!--Linkeo de fuente, googleFonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+
+
+	<!--Linkeo para CSS-->
+	<link rel="stylesheet" href="style.css">
+	
+	<!--Linkeo para BootStrap-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+	<!--Linkeo de script para usar FontAwesome-->
+    <script src="https://kit.fontawesome.com/7587738838.js" crossorigin="anonymous"></script>
+
+	<!--Icono pestaña-->
+    <link rel="icon" href="img/logo-3-niveles.png"> 
+
+	
+	<!--metas google-->
+    <meta name="description" content="Página Web Instituto Carlos Pellegrini Florencio Varela">
+    <meta name="keywords"    content="Carlos Pellegrini, Colegio, Instituto, Florencio Varela">
+    <meta name="author"      content="Luciano Melgar">
+    <meta name="copyright"   content="LucianoMelgar2023">
+    <meta name="robots"      content="index follow">
+
+	<!--metas facebook-->
+    <meta property="og:title"       content="Página Web Instituto Carlos Pellegrini Florencio Varela">
+    <meta property="og:description" content="Página Web Instituto Carlos Pellegrini Florencio Varela">
+    <meta property="og:type"        content="Página web informativa">
+    <meta property="og:image"       content="img/logo-3-niveles.png" alt="logoPellegrini"> 
+    <meta property="og:url"         content="https://es-la.facebook.com/ColegioCarlosPellegriniFv/"> 
+
+</head>
+
+<body>
+	<header>
+
+		<div class="contenedor-logo-colegio">
+			<!--Logo colegio-->
+			<a href="index.html"><img class="logoColegio" src="img/logoBlancoPNG.png" alt="logoPellegrini"></a>
+		</div>
+		
+		
+		<!--Botonera-->
+		<nav class="boton-REDES">
+
+			<!--Links de redes-->
+			<div class="div-REDES">
+				<a href="https://es-la.facebook.com/ColegioCarlosPellegriniFv/" target="_blank"><img class="logoRedes" src="img/logo-face.png" alt="logoFB"></a>
+				<a href="https://www.instagram.com/institutocarlospellegrinifv/" target="_blank"><img class="logoRedes" src="img/logo-igg.png" alt="logoIG"></a>
+				<a href="https://wa.me/541127951083" target="_blank"><img  class="logoRedes" src="img/logo-wpp.png" alt="logoWSP"></a>
+			</div>
+
+		</nav>
+	</header>
+
+	<!--BOTONERA DE OPCIONES-->
+	<section class="botones-inicio">
+
+		<div class="div-BotonesInfo">
+
+			<ul class="listado-Botones">
+
+				<li class="button"><a class="link-boton" href="nosotros.html">NOSOTROS</a></li>		<!--linkear nosotros.html-->
+				
+				<li class="button"><a class="link-boton" href="elColegio.html">EL COLEGIO</a></li>	
+
+				<li>
+					<a class="link-boton" href="#">NIVELES</a>
+	
+					<ul class="submenu">
+						<li class="boton-subMenu"><a class="link-boton" href="inicial.html">INICIAL</a></li>
+						<li class="boton-subMenu"><a class="link-boton" href="primaria.html">PRIMARIA</a></li>
+						<li class="boton-subMenu"><a class="link-boton" href="secundaria.html">SECUNDARIA</a></li>
+					</ul>
+				</li>
+
+				<li class="button"><a class="link-boton" href="servicios.html">SERVICIOS</a></li>
+
+				<li class="button"><a class="link-boton" href="admision.html">ADMISIÓN</a></li>
+
+				<li class="button"><a class="link-boton" href="cv.html">TRABAJA CON NOSOTROS</a></li>
+
+				<li class="button"><a class="link-boton" href="actos.html">ACTOS ESCOLARES</a></li>
+
+			</ul>
+
+		</div>
+	</section>
+
+
+<!--CARRUSEL-->
+
+<section class="seccion-carrusel">
+
+	<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+
+		<div class="carousel-inner">
+
+			<div class="carousel-item active"> <!--para que quede una imagen visible en el carrucel debe estar escrito en la clase carousel-item active y las demas deben estar sin el active -->
+				<img src="img/fotosColegio/nivelInicial.png" class="d-block w-100" alt="">
+			</div>
+
+			<div class="carousel-item">
+				<img src="img/fotosColegio/nivelPrimaria.png" class="d-block w-100" alt="e">
+			</div>
+
+			<div class="carousel-item">
+				<img src="img/fotosColegio/nivelSecundaria.png" class="d-block w-100" alt="l">
+			</div>
+
+		</div>
+
+
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		</button>
+		
+	</div>
+</section>
+
+
+
+<br><br>
+
+<h1 class="tituloColegio"><u>Instituto Carlos Pellegrini</u></h1>
+<br>
+
+<!--NOSOTROS-->
+<section>
+	<h2 class="titulo-NOSOTROS"><strong>NOSOTROS</strong></h2>
+	
+	<div class="descripcion-nosotros">
+		<img class="imgColegio-Nosotros" src="img/logoBlancoPNG.png" alt="">
+
+		<p class="p-nosotros">Nuestra Escuela, el Instituto Carlos Pellegrini, 
+			se fundó en el año 1996, cumpliendo así, el sueño de dos jóvenes empresarios. 
+			Los hermanos Salvador y Fabián Stabile, quienes entendiendo que sólo la Educación es la esencia del crecimiento de un pueblo, 
+			obtuvieron un crédito y sin dudarlo compraron el terreno donde se construyó con cimientos firmes, el edificio que nos alberga.
+			<br>
+			Nunca son fáciles los inicios. La familia Stabile, comprendiendo la importancia de este desafío, delineó objetivos claros y una 
+			organización estratégica para empezar a andar.
+			<br>
+			Así se iniciaba la obra, contando ese primer año con diez aulas y un gran salón de usos múltiples. Luego, con el correr del tiempo 
+			y de crecer sostenidamente, se construyeron seis aulas más, se dividió el patio e inauguramos el campo de deportes.
+			<br>
+			No solo crecía nuestra capacidad instalada, sino que también nuestros logros académicos, posicionándonos, así como una institución sólida.
+		</p>
+	</div>
+</section>
+
+<br><br>
+
+<!--BANNER "COMUNIDAD DE APRENDIZAJE"-->
+<div class="banner">
+	<h1><strong>COMUNIDAD DE APRENDIZAJE</strong></h1>
+</div>
+
+
+<br>
+
+<!--NIVELES-->
+<section class="seccion-NIVELES">
+
+	<div class="contenedor-titulo-p">
+		<h2 class="tituto-NIVELES"><strong>NIVELES</strong></h2>
+		<br>
+		<p class="p-NIVELES">Contámos con los tres niveles educativos, para acompañar a nuestros alumnos en todo su desarrollo educacional.</p>
+	
+	</div>
+	
+	<div class="contenedor-card">
+
+		<div class="card" style="width: 18rem;">
+			<a href="inicial.html"><img src="img/logo inicial.png" class="card-img-top" alt="logo-inicial"></a>
+	
+			<div class="card-body">
+				<p class="card-text">Nivel Inicial.</p>
+			</div>
+		</div>
+	
+		<br>
+	
+		<div class="card" style="width: 18rem;">
+			<a href="primaria.html"><img src="img/logo primaria.png" class="card-img-top" alt="logo-primaria"></a>
+	
+			<div class="card-body">
+				<p class="card-text">Nivel Primario.</p>
+			</div>
+		</div>
+	
+		<br>
+	
+		<div class="card" style="width: 18rem;">
+			<a href="secundaria.html"><img src="img/logo secu.png" class="card-img-top" alt="logo-secundaria"></a>
+	
+			<div class="card-body">
+				<p class="card-text">Nivel Secundario.</p>
+			</div>
+		</div>
+
+	</div>
+	
+
+	<br>
+
+</section>
+<br>
+
+
+<!--COMUNIDAD Y CARRUSELES DE COMUNIDAD-->
+
+<section class="seccion-COMUNIDAD">
+
+	<!--carrusel FADE-->
+	<div id="carouselExampleFade1" class="carousel-FADE slide carousel-fade">
+
+		<div class="carousel-inner">
+
+			<div class="carousel-item active">
+				<img src="img/fotosColegio/feria6.jpg" class="d-block w-100" alt="...">
+			</div>
+		
+			<div class="carousel-item">
+				<img src="img/fotosColegio/feria4.jpg" class="d-block w-100" alt="...">
+			</div>
+		
+			<div class="carousel-item">
+				<img src="img/fotosColegio/feria5.jpg" class="d-block w-100" alt="...">
+			</div>
+		</div>
+
+		<!--
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade1" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		</button>
+
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade1" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		</button> -->
+	</div>
+
+
+	<!--TITULO COMUNIDAD PELLEGRINI-->
+	<div class="div-titulo-COMUNIDAD">
+		<h1>COMUNIDAD PELLEGRINI</h1>
+	
+		<p>Las Ferias Educación, Artes, Ciencias y Tecnología son el resultado de un proceso que se inicia en las aulas, 
+			a partir de la inquietud de los estudiantes con el acompañamiento de sus docentes, que tiene que ver con la formulación de preguntas, 
+			la interpretación de los hechos, la construcción de modelos hermenéuticos, el razonamiento y, por sobre todo, 
+			el debate dentro del aula para contribuir a la promoción del pensamiento científico tecnológico. 
+			Estos proyectos forman parte de los procesos permanentes de enseñanza y aprendizaje institucional desde 2014
+		</p>
+	</div>
+	
+
+	<!--carrusel FADE-->
+	<div id="carouselExampleFade2" class="carousel-FADE slide carousel-fade">
+
+		<div class="carousel-inner">
+
+			<div class="carousel-item active">
+				<img src="img/fotosColegio/feria4.jpg" class="d-block w-100" alt="...">
+			</div>
+		
+			<div class="carousel-item">
+				<img src="img/fotosColegio/feria5.jpg" class="d-block w-100" alt="...">
+			</div>
+		
+			<div class="carousel-item">
+				<img src="img/fotosColegio/feria6.jpg" class="d-block w-100" alt="...">
+			</div>
+		</div>
+
+		<!--
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		</button>
+
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		</button> -->
+	</div>
+</section>
+
+
+<br><br>
+
+<!--UBICACIÓN, MAPAS-->
+<section>
+
+	<br>
+
+	<h2 class="titulo-UBICACION"><strong>UBICACIÓN</strong></h2>
+
+	<br>
+	
+	<div class="contenedor-mapa-primaria">
+
+		<iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.801641448595!2d-58.26469132399373!3d-34.810931968471664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3296d92c964e7%3A0x942024bb4235052f!2sInstituto%20Carlos%20Pellegrini!5e0!3m2!1ses!2sar!4v1689941938469!5m2!1ses!2sar" 
+		width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+		<div class="descripcion-mapa">
+			<h4>Inicial, Primaria</h4>
+			<p>Av. 12 de Octubre 1352, B1888 Florencio Varela, Provincia de Buenos Aires</p>
+		</div>	
+	</div>
+
+	<div class="contenedor-mapa-secundaria">
+		
+		<iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.801641448595!2d-58.26469132399373!3d-34.810931968471664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32962f5eec27d%3A0x4072b0f003d6c88f!2sCarlos%20Pellegrini%20-%20Nivel%20Inicial%20y%20Primario!5e0!3m2!1ses!2sar!4v1689942515107!5m2!1ses!2sar" 
+		width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+		<div class="descripcion-mapa">
+			<h4>Secundaria</h4>
+			<p>Av. 12 de Octubre 1498, B1888 Florencio Varela, Provincia de Buenos Aires</p>
+		</div>
+		
+	</div>
+</section>
+
+<br><br>
+
+<!--BANNER INSCRIPCIÓN-->
+<a class="boton-form" href="https://docs.google.com/forms/d/e/1FAIpQLSeBjGAwVEzVqRXP_p7GL5y3thjAcz_EsHbCshlm3ctU-Sda_Q/viewform?usp=sf_link">
+	<div class="banner-inscripcion">
+		<h1><strong>INSCRIPCIÓN 2024 ABIERTA</strong></h1>
+		<h3>para los tres niveles</h3>
+	</div>
+</a>
+
+<br>
+
+<div class="contenedor-mails-y-banner">
+
+	<!--FORMULARIO PARA ENVIAR MAIL A ADMINISTRACIÓN-->
+	<div class="div-para-mails">
+		<h1 class="titulo-escribimos">ESCRIBINOS</h1>
+		<br>
+
+		<!--Acá agregamos el mail a donde llegaran los mails, o sea el Receptor-->
+		<form class="formulario-mails" action="mailto:info@institutocarlospellegrini.com" method="post" enctype="text/plain">
+
+			<label class="tituloCaja-correo" for="email">Mi correo electrónico:</label>	<!--Acá se escribe el mail Emisor-->
+			<input class="caja-email" type="email" id="email" name="email" required>
+
+			<br><br>
+
+			<label class="tituloCaja-mensaje" for="mensaje">Mensaje:</label>
+			<textarea class="caja-mensaje" id="mensaje" name="mensaje" required></textarea>
+			<br>		
+			<input class="boton-enviar" type="submit" value="Enviar">
+
+		</form>
+
+	</div>
+
+	<!--BANNER CON NOMBRE, VERDE CURSIVA-->
+	<a href="#arriba"><img class="banner-nombre" src="img/banner-verde.png" alt="banner-nombre"></a>
+	
+</div>
+
+<br><br>
+
+
+<!-- Linkeo con BootStrap, JavaScript Bundle with Popper, codigo para agregar galeria de imagenes, siempre al final del BODY -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+
+</script>
+
+</body>
+
+<footer>
+	<p>© 2023 - Instituto Carlos Pellegrini. Colegio Privado | Av. 12 de Octubre 1352, Florencio Varela, Bs. As. | Telefono: 4255-7110 | 1527951083</p>
+</footer>
+
+</html>
+

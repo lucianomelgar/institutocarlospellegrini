@@ -1,0 +1,18 @@
+.carousel-item img{
+    width: 100%; /* Ajusta el ancho de la imagen al ancho del contenedor */
+    height: auto; /* Permite que la altura de la imagen se ajuste proporcionalmente */
+    display: block; /* Para evitar espacios indeseados debajo de las imágenes */
+}
+
+
+.carousel-item{
+
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform .6s ease-in-out;
+}

@@ -1,0 +1,363 @@
+/*Tipo de fuente*/
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    font-family: 'Montserrat', sans-serif;
+}
+
+section{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, a{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*____________________________________________________________________*/
+
+/*HEADER, BOTONERA. ubicación y colores*/
+
+header{
+    display: flex;
+}
+
+header {           
+    *width: 450%;    /*Tamaño del <a>(link que esta dentro del header)*/
+    *background-color: #0bb94e;
+}
+
+header nav div{
+    display: flex;
+    justify-content: flex-end;  /* Centrar horizontalmente */
+    align-items: center;        /* Centrar verticalmente */
+
+    padding-top: 20px;
+    padding-left: 20px;
+    
+}
+
+/*nav*/
+.boton-REDES{
+    display: flex;
+    *justify-content: flex-end;
+    margin-bottom: 50px;
+    
+}
+
+.div-REDES{                       /*posicionamiento de logos de redes */
+    *background-color: blueviolet;
+
+    display: flex;
+    padding: 5px;
+
+    *margin-left:20px;
+    
+    *margin-top: 50px;
+    *margin-right: 0%;
+}
+
+section{
+    *background-color: #446536;
+    background-color: #196F3D;
+}
+
+.contenedor-logo-colegio {
+    width: 1175px;
+}
+
+/*___________________________________________________________________________________________________________*/
+
+/*HEADER, BOTONERA*/
+
+.logoColegio{           /*tamaño de logo colegio*/
+    width: 230px;       /*ancho logo*/
+    height: 180x;       /*alto logo*/
+
+    margin-left: 50px;
+
+    transition: filter 0.5s ease; /* Añadimos una transición suave para el cambio de color */
+}
+.logoColegio:hover{
+    filter:  invert(25%); /* Cambia el color de la imagen a saturado */
+}
+
+.logoRedes{         /*tamaño de logos de redes*/
+    width: 55px;     
+    *height:70px;
+    *display: flex;
+    *justify-content: end;
+
+    margin-right: 40px;
+    margin-top: 50px;
+
+    transition: filter 0.1s ease; /* Añadimos una transición suave para el cambio de color */
+}
+.logoRedes:hover{
+    filter: saturate(250%); /* Cambia el color de la imagen a saturado */
+}
+
+.div-BotonesInfo {          /* Botones Nosotros-El colegio-NIveles */
+    text-align: center;
+    color: whitesmoke;    
+    *padding: 5px;  
+}
+
+.listado-Botones {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+}
+
+.button {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.link-boton{
+    color: white;         /*color de fuente*/
+    text-decoration: none; /*Linea debajo del link*/
+
+    padding: 15px 20px;
+}
+.link-boton:hover{
+    color: #333;
+}
+
+/*Responsive*/
+@media (max-width: 500px){
+    .logoColegio{           /*tamaño de logo colegio*/
+        width: 130px;       /*ancho logo*/
+        height: 80x;       /*alto logo*/
+    
+        margin-left: -1px;
+    
+        transition: filter 0.5s ease; /* Añadimos una transición suave para el cambio de color */
+    }
+    .logoColegio:hover{
+        filter:  invert(25%); /* Cambia el color de la imagen a saturado */
+    }
+    
+    .logoRedes{         /*tamaño de logos de redes*/
+        width: 35px;     
+        height:35px;
+        display: flex;
+        justify-content: end;
+        margin-right: 40px;
+    
+        transition: filter 0.1s ease; /* Añadimos una transición suave para el cambio de color */
+    }
+    .logoRedes:hover{
+        filter: saturate(250%); /* Cambia el color de la imagen a saturado */
+    }
+    
+    #id-logo-wsp{
+        width: 50px;     
+        height:50px;
+    }
+    
+    .div-BotonesInfo {          /* Botones Nosotros-El colegio-NIveles */
+        text-align: center;
+        color: whitesmoke;    
+        background-color: #196F3D;
+    
+        position: relative;         /* Asegurarse de que el menú tenga una posición establecida */
+        z-index: 1;                 /* Valor positivo para que el menú esté por encima de las imágenes */
+    }
+    
+    .listado-Botones {
+        display: inline-block;
+        list-style: none;
+        padding: 0;
+        margin: 10px;
+    }
+    
+    .button {
+        display: inline-block;
+        margin: 0 5px;
+    }
+    
+    .link-boton{
+        color: white;         /*color de fuente*/
+        text-decoration: none; /*Linea debajo del link*/
+    }
+    .link-boton:hover{
+        color: #333;
+    }
+
+    .boton-REDES{
+        width: 290px;
+        border-bottom: 50px;
+    }
+    .div-REDES{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/*____________________________________________________________________________________________________________*/
+
+/*MENU DESPLEGABLE en botonera, PRUEBA*/
+nav {
+    *background-color: #333;
+    
+}
+
+.listado-Botones {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.listado-Botones li {
+    display: inline-block;
+    position: relative;
+}
+
+.listado-Botones li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+.listado-Botones li:hover {
+    *background-color: #555;
+}
+
+/* Estilos para el submenú */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color:  #196F3D;
+    width: 200px;
+    left: 0;
+    top: 100%;
+}
+
+.submenu li {
+    display: flex;    
+
+}
+
+.listado-Botones li:hover .submenu {
+    display: block;
+}
+
+
+/*____________________________________________________________________________________________________________*/
+
+/*IMAGEN NIVEL CORRESPONDIENTE*/
+
+.imagen-nivel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
+}
+
+.imagen-nivel img{
+    height: 165px;
+}
+
+@media (max-width: 500px){
+    .foto-inicial{
+        object-fit: contain;
+        width: 100%;
+
+    }
+    #logo-nivel{
+        display: none;
+    }
+}
+
+/*____________________________________________________________________________________________________________*/
+
+/*Texto informativo*/
+
+.div-texto-informativo{
+    *background-color: #a0c38e;
+
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.div-texto-informativo h1, .div-texto-informativo p{
+    display: flex;
+    *justify-content: center;
+    align-items: center;
+
+    text-align: justify;
+}
+
+.div-texto-informativo h1, .div-texto-informativo h2{
+    color: #446536;
+    *color: #196F3D;
+}
+
+.linea-separadora-titulo{
+
+    display: flex;
+    justify-content: center;
+
+    border-top: 4px solid #1d613a;    /* Establece un borde superior personalizado */
+
+    
+}
+
+/*_____________________________________________________________________________________________________________________*/
+
+/*Descripción*/
+
+.descripcion{
+    display: flex;      /*pone los elementos del contenedor uno al lado de otro*/
+    margin: 0 auto;     /*centrado del div*/
+
+    width: 70%;         /*ancho del contenedor div*/
+
+
+}
+
+.descripcion p{
+    text-align: justify;
+}
+
+
+.entrada-primaria{
+    width: 500px;
+    height: 300px;
+
+    border-radius: 20px;
+
+    margin-left: 30px;
+  *  margin-bottom: 15px;
+
+}
+
+@media (max-width: 500px){
+    .descripcion{
+        display: block;
+    }
+
+    .entrada-primaria{
+        margin-left: 0px;
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+    }
+}
+/*_____________________________________________________________________________________________________________________*/
+
+/*Footer*/
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #196F3D;
+    color: whitesmoke;
+}
